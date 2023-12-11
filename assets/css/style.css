@@ -1,0 +1,145 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+}
+
+.logo-container {
+    background-image: url('/assets/img/bg.jpg'); /* Agrega la imagen de fondo */
+    background-position: center; /* Centra la imagen de fondo */
+    padding: 10px 0;
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+.logo-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    background-image: url('/assets/img/header.jpg');
+    width: 100%; /* Asegúrate de que el encabezado ocupe el 100% del ancho de la pantalla */
+    height: 650px;
+    overflow: hidden; /* Evita que el contenido del encabezado se desborde */
+}
+
+.text-sharks{
+    font-size: 5rem;
+    @media (max-width: 767px) {
+        font-size: 1.5rem; /* Reduzca el tamaño del texto para pantallas más pequeñas */
+    }
+}
+
+
+/* Estilos para la sección */
+section {
+    padding: 20px;
+}
+
+/* Estilos para los elementos */
+.element-container {
+    display: flex;
+    justify-content: space-around; /* Ajusta según la distribución deseada */
+    align-items: center;
+}
+
+.element {
+    text-align: center;
+}
+
+
+.element h3 {
+    margin-top: 10px; /* Espacio entre la imagen y el título */
+    font-size: 1.5rem; /* Tamaño del título */
+}
+
+.element p {
+    margin-top: 5px; /* Espacio entre el título y el texto */
+}
+
+
+.sticky {
+    display: block; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: -20px; /* Place the button 30px from the right */
+    z-index: 9;
+  }
+  .sticky img {
+    width: 60px;
+  }
+  .logo__sticky {
+    display: block; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    top: 0; /* Place the button at the bottom of the page */
+    left: 0; /* Place the button 30px from the right */
+    z-index: 9;
+  }
+  .text-telegram{
+    text-decoration: none;
+}
+  /* END WHATS APP */
+  
+
+  li{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+
+  }
+  
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-container .container {
+    flex: 0 0 100%; /* Ocupa el 100% del ancho en dispositivos móviles */
+    margin-bottom: 15px; /* Espaciado entre las imágenes */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
+}
+.important-box {
+    background-color: #ffcc00; /* Color de fondo del recuadro */
+    padding: 40px; /* Espaciado interno del recuadro */
+    border-radius: 10px; /* Bordes redondeados del recuadro */
+}
+
+.pulse {
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.06);
+    }
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+footer p {
+    margin-bottom: 10px; /* Espaciado inferior entre los párrafos */
+}
+
+.whatsapp-icon {
+    color: #25d366;
+}
