@@ -20,3 +20,21 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const counterElement = document.getElementById('counter');
+    const targetCount = 6000;
+    let currentCount = 0;
+  
+    function updateCounter() {
+      if (currentCount < targetCount) {
+        currentCount += 51;
+        counterElement.textContent = currentCount;
+        setTimeout(updateCounter, 10); // Puedes ajustar el tiempo de actualización
+      }
+    }
+  
+    updateCounter();
+  });
+  
