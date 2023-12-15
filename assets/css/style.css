@@ -143,3 +143,13 @@ footer p {
 .whatsapp-icon {
     color: #25d366;
 }
+
+.counter-container {
+    text-align: center;
+}
+
+#counter {
+    font-size: 3em;
+    font-weight: bold;
+    color: #3498db; /* Puedes cambiar el color según tus preferencias */
+}
